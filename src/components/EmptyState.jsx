@@ -1,0 +1,2 @@
+import { Inbox } from 'lucide-react'
+export default function EmptyState({ title = 'لا توجد بيانات', description = 'جرّب تغيير البحث أو أضف سجلًا جديدًا.', action }) { return <div className="flex flex-col items-center justify-center py-14 text-center"><span className="mb-3 grid h-14 w-14 place-items-center rounded-2xl bg-slate-100 text-slate-400"><Inbox size={26}/></span><h3 className="font-extrabold">{title}</h3><p className="mt-1 text-sm text-slate-500">{description}</p>{action && <div className="mt-4">{action}</div>}</div> }

@@ -1,0 +1,2 @@
+import { Search } from 'lucide-react'
+export default function SearchInput({ value, onChange, placeholder = 'ابحث...' }) { return <div className="relative min-w-[180px] flex-1"><Search size={17} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400"/><input className="field pr-9" value={value} onChange={e => onChange(e.target.value)} placeholder={placeholder}/></div> }

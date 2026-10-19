@@ -1,0 +1,2 @@
+import { statusClasses } from '../utils/orderHelpers'
+export default function StatusBadge({ status }) { return <span className={`inline-flex whitespace-nowrap rounded-full px-3 py-1 text-xs font-bold ${statusClasses(status)}`}>{status}</span> }

@@ -1,0 +1,2 @@
+import Modal from './Modal'
+export default function ConfirmDialog({ open, title = 'تأكيد العملية', message, onCancel, onConfirm }) { return <Modal open={open} title={title} onClose={onCancel}><p className="mb-6 text-sm leading-7 text-slate-600">{message}</p><div className="flex justify-end gap-2"><button className="btn-secondary" onClick={onCancel}>رجوع</button><button className="btn-primary bg-rose-600 hover:bg-rose-700" onClick={onConfirm}>تأكيد</button></div></Modal> }

@@ -1,0 +1,2 @@
+import { ShoppingBag } from 'lucide-react'
+export default function Logo({ light = false }) { return <div className={`flex items-center gap-2 font-extrabold tracking-tight ${light ? 'text-white' : 'text-slate-900'}`}><span className="grid h-9 w-9 place-items-center rounded-xl bg-blue-600 text-white"><ShoppingBag size={20}/></span><span className="text-xl">Sell<span className="text-blue-500">Flow</span></span></div> }
